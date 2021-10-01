@@ -17,16 +17,21 @@
 
 .header {
     color: white;
-    height: 5rem;
+    min-height: 5rem;
     background-color: black;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 30rem;
-    height: 3.2rem;
+    min-height: 0.5rem;
+    max-height: 0.5rem;
 }
 
 .logo-img {
@@ -41,9 +46,36 @@
     margin: 0.5rem 1rem 0rem 0rem;
 }
 
-.search-input {
-    width: 20rem;
+.main-content {
+    max-height: 45rem;
+    width: 100%;
+    background-color: red;
+}
+
+.chat-window {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+
+.chat-input-and-send-button, .chat-input, .send-button {
     height: 50px;
+}
+
+.chat-input-and-send-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+}
+
+.send-button {
+    width: 30vw;
+}
+
+.chat-input {
+    width: 70vw;
     padding: 5px;
     font-size: 30px;
     font-family: sans-serif;
@@ -51,14 +83,17 @@
     outline: none;
 }
 
-.main-content {
-    height: 45rem;
-    background-color: red;
-}
-
 hr {width: 100%;}
 
+
+
+
+/*
 .footer {
-    height: 5.1rem;
+    max-height: 5.1rem;
     padding: 15px;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: grey;
 }
+*/

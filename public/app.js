@@ -1,6 +1,7 @@
 const chat = document.getElementById("chat-window");
 const chatButton = document.getElementById("chat-button");
 const chatInput = document.getElementById("chat-input");
+
 const username = "Sebastian";
 
 chatButton.addEventListener("click", onChatButtonClicked);
@@ -19,7 +20,7 @@ function onChatButtonClicked() {
       // putting who sent message and message to div1.
       div1.append(fromMessage, userMessage);
 
-      //adding content to fromMesage and userMessage.
+      //adding content to fromMessage and userMessage.
       fromMessage.append(`From ${username}: `);
       userMessage.append(chatInput.value);
 

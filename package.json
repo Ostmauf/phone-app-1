@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "phone-app-1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ostmauf/phone-app-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ostmauf/phone-app-1/issues"
+  },
+  "homepage": "https://github.com/Ostmauf/phone-app-1#readme",
+  "description": ""
+}

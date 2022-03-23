@@ -2,7 +2,7 @@ const chat = document.getElementById("chat-window");
 const chatButton = document.getElementById("chat-button");
 const chatInput = document.getElementById("chat-input");
 
-const username = "Sebastian";
+const username = "User";
 
 chatButton.addEventListener("click", onChatButtonClicked);
 
@@ -21,15 +21,15 @@ function onChatButtonClicked() {
       div1.append(fromMessage, userMessage);
 
       //adding content to fromMessage and userMessage.
-      fromMessage.append(`From ${username}: `);
+      fromMessage.append("From " + username + ":" + " ");
       userMessage.append(chatInput.value);
 
       // putting message container in the chat.
       chat.append(div1);
 
       // Styling div1.
-      div1.style.minWidth = "35%";
-      div1.style.width = "fit-content";
+      div1.style.minWidth = "10%";
+      
       div1.style.minHeight = "1rem";
       div1.style.backgroundColor = "yellow";
       div1.style.border = "solid darkyellow 1px";
@@ -52,7 +52,8 @@ function onChatButtonClicked() {
 
       // takes away chat message away from the input after message is sent.
       chatInput.value = "";
-   }
 
-    
+      //Makes it so everytime someone sends a message it goes to the bottom of the screen.
+      window.scrollTo(0,document.body.scrollHeight);
+   }
 }

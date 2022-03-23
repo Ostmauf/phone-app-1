@@ -19,8 +19,6 @@
 }
 
 .header {
-
-    
     min-height: 5rem;
     padding: 1rem;
 
@@ -30,6 +28,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: sticky;
+    top: 0;
 }
 
 .header-content {
@@ -62,7 +63,7 @@
 .chat-window {
     width: 100%;
     min-height: 100%;
-    padding: 2.5rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
 }
 
 .chat-input-and-send-button, .chat-input, .send-button, .chat-holder {
@@ -71,10 +72,10 @@
 
 .chat-input-and-send-button {
     width: 100%;
-    
+
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     bottom: 0;
 }
 
@@ -85,57 +86,26 @@
 .chat-input {
     width: 70vw;
     padding: 5px;
+
     font-size: medium;
     font-family: sans-serif;
     resize: none;
     outline: none;
 }
 
-.chat-holder {
-    width: 100%;
-    
-}
 
+
+
+
+/*
 #user-message-and-were-it-is-from:before {
-    content: "";
-    display: inline-block;
-    transform: rotate(45deg);
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.5rem;
+
+    content: "";
+    display: inline-block;
+    transform: rotate(45deg);
     background-color: yellow;
-}
-
-/*
-.test {
-    min-width: 35%;
-    width: fit-content;
-    min-height: 1rem;
-    background-color: yellow;
-    border-radius: 0.5rem;
-    padding: 0.5rem 0.5rem 0.5rem 0 ;
-    display: flex;
-    align-items: center;
-}
-
-.from-message {
-    font-family: 'Merriweather', serif;
-    font-weight: 900;
-    font-style: italic;
-}
-
-.user-message {
-    font-family: 'Merriweather', serif;
-    font-size: smaller;
-}
-
-
-
-.footer {
-    max-height: 5.1rem;
-    padding: 15px;
-    font-size: 0.8rem;
-    font-style: italic;
-    color: grey;
 }
 */
